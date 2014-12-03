@@ -74,6 +74,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.2)
+    filterrific (1.4.2)
+      rails (>= 3.1.0)
     formtastic (3.1.2)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.1.1)
@@ -178,6 +180,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.0.0)
   devise
+  filterrific
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.1.6)

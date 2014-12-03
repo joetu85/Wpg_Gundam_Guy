@@ -3,4 +3,3 @@ class FinderController < ApplicationController
     @products = Product.all
   end
 end
-

@@ -1,9 +1,9 @@
 <h1>All products</h1>
 <% @products.each do |product| %>
   <div>
-    <p><%= product.product_name %></p>
+    <h2><%= product.product_name %></h2>
     <p><%= product.image %></p>
-    <p><%= product.price %></p>
-    <p><%= product.category %></p>
+    <p>Price: <%= product.price %></p>
+    <p>Category: <br /><%= product.category %></p>
   </div>
 <% end %>
