@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   root to: 'finder#index'
   get 'product/:id' => 'finder#show', constraints: {id: /\d+/}, as: 'product'
   get 'page/:id' => 'pages#show', as: 'page2'
+  get 'category/:id' => 'categories#show', as: 'category'
 end

@@ -1,3 +1,7 @@
 <nav id="sideNav">
-  <p>navigations</p>
+  <h3>Shop By Category:</h3>
+  <% @categories.each do |category| %>
+    <%= link_to category.name, category %>
+    <br />
+  <% end %>
 </nav>

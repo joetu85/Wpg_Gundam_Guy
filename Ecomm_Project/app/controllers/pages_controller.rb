@@ -3,6 +3,7 @@ class PagesController < InheritedResources::Base
   def show
     @pages = Page.all
     @page = Page.find(params[:id])
+    @categories = Category.all
   end
 
   private  
