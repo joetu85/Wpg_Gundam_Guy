@@ -1,3 +1,5 @@
 <nav id="mainNav">
-  <p>Main Nav</p>
+  <% @pages.each do |page| %>
+    <%=  link_to page.name, page  %>
+  <% end %>
 </nav>
