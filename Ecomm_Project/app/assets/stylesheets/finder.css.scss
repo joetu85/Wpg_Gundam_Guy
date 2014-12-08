@@ -3,43 +3,53 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 header{
-    width: 860px;
-    margin: 5px;
+    width: 895px;
+    margin: 0 5px;
     padding: 5px;
     border: solid 2px;
+    background-color: #FFFFFF;
 }
-
 #mainContainer{
     width: 800px;
-    margin: 0 auto;
     float: left;
     .product{
         border: solid 2px;
         width: 200px;
-        height: 200px;
+        height: 300px;
         float: left;
         margin: 5px;
-        padding: 5px;
-    }
+        padding: 15px;
+        background-color: #FFFFFF;
+    }   
 }
+
 
 .clear {
     clear: both;
 }
 
 #mainNav{
-    width: 860px;
-    height: 35px;
+    width: 895px;
+    height: 25px;
     border: solid 2px;
-    margin: 5px;
+    margin: 0 5px;
     padding: 5px;
     clear: both;
+    background-color: #FFFFFF;
 }
 
 #sideNav{
     margin: 5px;
-    width: 200px;
-    height: 1100px;
+    width: 175px;
+    height: 700px;
     border: solid 2px;
     float: left;
-}   
+    background-color: #FFFFFF;
+}
+
+#singleProduct, .product{
+    img{
+        width: 200px;
+        height: 150px;
+    }   
+}

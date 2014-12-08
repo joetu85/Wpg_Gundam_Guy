@@ -1,5 +1,6 @@
 <div id="mainContainer">
   <div id="singleProduct">
     <h2><%= @product.product_name %></h2>
+    <%= image_tag(@product.image) %> <%= image_tag(@product.image.insert(-5, '2')) %>
   </div>
 </div>
