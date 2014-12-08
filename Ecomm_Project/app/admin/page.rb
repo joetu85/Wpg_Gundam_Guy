@@ -1,6 +1,6 @@
 ActiveAdmin.register Page do
 
-  permit_params :content
+  permit_params :content, :name
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
