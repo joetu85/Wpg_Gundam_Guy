@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   
   root to: 'finder#index'
+  get 'product/:id' => 'finder#show', constraints: {id: /\d+/}, as: 'product'
 end

@@ -1,10 +1,45 @@
 // Place all the styles related to the finder controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-div {
-    border: solid 2px;
-    width: 200px;
-    float: left;
+
+header{
+    width: 860px;
     margin: 5px;
     padding: 5px;
+    border: solid 2px;
 }
+
+#mainContainer{
+    width: 800px;
+    margin: 0 auto;
+    float: left;
+    .product{
+        border: solid 2px;
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+#mainNav{
+    width: 860px;
+    height: 35px;
+    border: solid 2px;
+    margin: 5px;
+    padding: 5px;
+    clear: both;
+}
+
+#sideNav{
+    margin: 5px;
+    width: 200px;
+    height: 1100px;
+    border: solid 2px;
+    float: left;
+}   
