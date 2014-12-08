@@ -1,4 +1,5 @@
 <nav id="mainNav">
+  <%= link_to 'Home', root_path %>
   <% @pages.each do |page| %>
     <%=  link_to page.name, page  %>
   <% end %>
