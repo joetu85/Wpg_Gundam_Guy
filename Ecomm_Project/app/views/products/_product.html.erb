@@ -4,6 +4,10 @@
   <p>Price: <%= product.price %></p>
   <p>Category: <br />
   <% if product.category.present? %>
-    <%= product.category.name %></p>
+    <%= product.category.name %>
   <% end %>
+  </p>
+  <p id="favourite">
+    <%= link_to 'Set as favourite product', save_fav_prod_path(product), method: :post %>
+  </p>
 </div>

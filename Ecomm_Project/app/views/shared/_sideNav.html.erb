@@ -6,8 +6,19 @@
   <% end %>
   <br />
   <h3>Shop By Category:</h3>
+  <%= link_to "All Products", root_path %>
+  <br />
   <% @categories.each do |category| %>
     <%= link_to category.name, category %>
     <br />
+  <% end %>
+  <br />
+  <h3>Favourite Product</h3>
+  <% if @fav_prod %>
+    <div id="favProd">
+      <%= render @fav_prod %>
+    </div>
+    <% else %>
+      <p>None Saved.</p>
   <% end %>
 </nav>

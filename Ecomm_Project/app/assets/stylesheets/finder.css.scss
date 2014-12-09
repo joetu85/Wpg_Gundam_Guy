@@ -29,12 +29,27 @@ header{
 
 #mainNav{
     width: 895px;
-    height: 25px;
+    height: 65px;
     border: solid 2px;
     margin: 0 5px;
     padding: 5px;
     clear: both;
     background-color: #FFFFFF;
+    #leftNav{
+        float:left;
+    }
+    
+    #rightNav {
+        width: 800px;
+        text-align: right;
+        select, input, p{
+            display: inline;
+        }
+        input{
+            width: 90px;
+        }
+        float: right;
+    }
 }
 
 #sideNav{
@@ -44,7 +59,25 @@ header{
     border: solid 2px;
     float: left;
     background-color: #FFFFFF;
+    h3{
+        background-color: #D3D3D3;
+    }
+    #favProd{
+        padding: 5px;
+        h2{
+            font-size: 12pt;
+        }
+        img {
+            width: 100px;
+            height: 75px;
+        }
+        #favourite{
+            display: none;
+        }
+    }
 }
+
+
 
 #singleProduct, .product{
     img{

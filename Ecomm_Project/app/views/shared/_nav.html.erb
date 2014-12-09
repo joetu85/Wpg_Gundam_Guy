@@ -1,6 +1,17 @@
 <nav id="mainNav">
-  <%= link_to 'Home', root_path %>
-  <% @pages.each do |page| %>
-    <%=  link_to page.name, page  %>
-  <% end %>
+  <div id="leftNav">
+    <%= link_to 'Home', root_path %>
+    <% @pages.each do |page| %>
+      <%=  link_to page.name, page  %>
+    <% end %>
+  </div>
+  <div id="rightNav">
+    <p>Keyword search by category:</p>
+    <%= form_tag category_search_results_path, method: :get do %>
+     <%= select_tag :my_option, options_from_collection_for_select(@categories, 'id', 'name') %>
+     <%= text_field_tag :search_keywords %>
+     <%= submit_tag "Search" %>
+    <% end %>
+  </div>
+  <div class="clear"></div>
 </nav>
