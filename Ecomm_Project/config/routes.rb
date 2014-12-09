@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'product/:id' => 'finder#show', constraints: {id: /\d+/}, as: 'product'
   get 'page/:id' => 'pages#show', as: 'page2'
   get 'category/:id' => 'categories#show', as: 'category'
+  get 'search_results' => 'finder#search_results', as: 'search_results'
 end
