@@ -1,4 +1,4 @@
 class Province < ActiveRecord::Base
   has_many :customers
-  validates :name, presence: true
+  validates :name, :tax, presence: true
 end
