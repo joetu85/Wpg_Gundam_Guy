@@ -6,7 +6,7 @@ class CustomersController < InheritedResources::Base
   end
   
   def add_new_customer
-    new_customer = Customer.new(params[:first_name], params[:last_name], params[:address], params[:city], params[:postalcode], params[:province_id])
+    new_customer = Customer.new(params[:first_name], params[:last_name], params[:address], params[:city], params[:postalcode], params[:province_id])  
   end
   
   private

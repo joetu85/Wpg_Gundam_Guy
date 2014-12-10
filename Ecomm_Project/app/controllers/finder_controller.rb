@@ -29,7 +29,7 @@ class FinderController < ApplicationController
   
   def save_product
     session[:product_to_purchase] = params[:id]
-    redirect_to new_order_path
+    redirect_to customer_info_screen_path
   end
   
   def save_favourite_product

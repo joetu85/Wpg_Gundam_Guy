@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   post 'favourite_product/:id' => 'finder#save_favourite_product', as: 'save_fav_prod'
   get 'category_search_results' => 'finder#category_search_results', as: 'category_search_results'
   get 'purchase/:id' => 'finder#save_product', as: 'purchase'
-  get 'new_order' => 'customers#new'
+  get 'new_order' => 'customers#new', as: 'customer_info_screen'
   get 'add_new_customer' => 'customers#add_new_customer'
 end
