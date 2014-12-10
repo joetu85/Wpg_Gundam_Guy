@@ -27,9 +27,10 @@ class FinderController < ApplicationController
     @products = Product.where("category_id = ? AND product_name LIKE ?", params[:my_option], wildcard_keywords).order("product_name").page(params[:page]).per(6)
   end
   
-  def add_to_cart
-    session[:items_in_cart] << params[:id]
-  end 
+  def save_product
+    session[:product_to_purchase] = params[:id]
+    redirect_to new_order_path
+  end
   
   def save_favourite_product
     session[:fav_prod_id] = params[:id]

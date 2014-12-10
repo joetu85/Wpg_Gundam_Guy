@@ -1,5 +1,35 @@
-<h1>New customer</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', customers_path %>
+<div id="CMS">
+  <h1>Customer info</h1>
+  
+  <%= form_tag add_new_customer_path, method: :get do %>
+    <div class="field">
+      <p>First name:</p>
+      <%= text_field_tag  :first_name %>
+    </div>
+    <div class="field">
+      <p>Last name:</p>
+      <%= text_field_tag  :last_name %>
+    </div>
+    <div class="field">
+      <p>Address:</p>
+      <%= text_field_tag  :address %>
+    </div>
+    <div class="field">
+      <p>City:</p>
+      <%= text_field_tag  :city %>
+    </div>
+    <div>
+      <p>Province:</p>
+      <%= select_tag :province_id, options_from_collection_for_select(@provinces, 'id', 'name') %>
+    </div>
+    <div class="field">
+      <p>Postal Code</p>
+      <%= text_field_tag  :postalcode %>
+    </div>
+    <div class="actions">
+      <%= submit_tag "Submit Order" %>
+    </div>
+  <% end %>
+  
+  <%= link_to 'Cancel', root_path %>
+</div>

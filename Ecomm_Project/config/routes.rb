@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :orders
+
   resources :provinces
 
   resources :customers
@@ -15,5 +17,7 @@ Rails.application.routes.draw do
   get 'search_results' => 'finder#search_results', as: 'search_results'
   post 'favourite_product/:id' => 'finder#save_favourite_product', as: 'save_fav_prod'
   get 'category_search_results' => 'finder#category_search_results', as: 'category_search_results'
-  get 'add_to_cart' => 'finder#add_to_cart', as: 'add_to_cart'
+  get 'purchase/:id' => 'finder#save_product', as: 'purchase'
+  get 'new_order' => 'customers#new'
+  get 'add_new_customer' => 'customers#add_new_customer'
 end
